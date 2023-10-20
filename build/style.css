@@ -233,7 +233,7 @@ img {
 	width: 30vw;
 	position: fixed;
 	top: 30%;
-	left: 62%;
+	right: 62%;
 	animation: rotate 1s linear infinite;
 	animation-play-state: paused;
 	animation-delay: calc(var(--scroll) * -1s);
@@ -248,7 +248,7 @@ img {
 
 .box {
     width: 50%;
-    left: 2vw;
+    left: 47vw;
     position: relative;
     background-color: black;
     color: rgb(255, 255, 255);
