@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 100px;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="8"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M181.66,583.47v-187.68c-4.98-29.48,4.44-58.1,25.08-73.85,13.65-10.42,28.46-12.35,36.32-12.71,171.31,.88,342.62,1.75,513.92,2.63,10.61-.43,43.18-.33,71.9,22.9,8.99,7.27,15.93,16.17,15.97,16.21h0c4.94,8.22,9.53,21.76,13.71,41.16,.59,11.9,1.19,23.81,1.78,35.71,21.47,16.78,42.94,33.57,64.41,50.35-23.47,15.77-46.93,31.54-70.4,47.3-.62,19.82-1.24,39.65-1.86,59.47,.51,8.56,.52,28.91-11.8,45.15-9.48,12.49-21.62,16.42-37.75,21.65-10.23,3.31-25.42,6.88-44.45,6.48-170.24-1.21-340.48-2.41-510.72-3.62-6.15,.16-24.37-.18-41.02-13.15-26.48-20.63-25.26-54.75-25.08-58Z"/>
+  <text class="cls-2" transform="translate(261.81 512)"><tspan x="0" y="0">Appreciate</tspan></text>
+</svg>
