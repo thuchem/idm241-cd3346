@@ -228,17 +228,22 @@ body {
     font-size: 4vw;
     width:70%;
   }
-  #microinteractiongif{
-    width: 1000px;
-    margin-left: 32vw; /* Center the image */
+  #microinteractiongif {
+    width: 80vw;
+    margin-left: 10vw; /* Adjust the margin to center the container */
     margin-bottom: 10vh;
-    display: block; /* Remove default inline-block behavior */
-  }
-  #microinteractiongif img{
-    max-width: 1000px; /* Ensure the image doesn't exceed the container width */
-    max-height: 100vw; /* Ensure the image doesn't exceed the container height */
+}
+
+#microinteractiongif img {
+    max-width: 70vw;
+    max-height: 50vh;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally within the container */
     margin-bottom: 10vh;
-  }
+}
+
+
+
   .subtext h3 {
     text-align: center; /* Center the text */
     margin: 0; /* Remove default margin */
