@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IDM241 - CHEM DUONG - FINAL - BUILD</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<h4>IDM241 - FINAL - BUILD</h4>
+
+
+
+
+<div class="carousel-container">
+
+
+
+
+<div class="carousel">
+  <div class="rectangle">
+    <input type="radio" class="rectangle" name="rect" id="rect1">
+    <label for="rect1" class="rectangle-label"></label>
+    <div class="popup-trigger" onclick="openPopup()">+</div>
+    <div class="rectangle-image" style="background-image: url('img/apple1.jpeg');"></div>
+  </div>
+  <div class="rectangle">
+    <input type="radio" class="rectangle" name="rect" id="rect2">
+    <label for="rect2" class="rectangle-label"></label>
+    <div class="popup-trigger" onclick="openPopup()">+</div>
+    <div class="rectangle-image" style="background-image: url('img/apple2.jpeg');"></div>
+  </div>
+  <div class="rectangle">
+    <input type="radio" class="rectangle" name="rect" id="rect3">
+    <label for="rect3" class="rectangle-label"></label>
+    <div class="popup-trigger" onclick="openPopup()">+</div>
+    <div class="rectangle-image" style="background-image: url('img/apple3.jpeg');"></div>
+  </div>
+  <div class="rectangle">
+    <input type="radio" class="rectangle" name="rect" id="rect4">
+    <label for="rect4" class="rectangle-label"></label>
+    <div class="popup-trigger" onclick="openPopup()">+</div>
+    <div class="rectangle-image" style="background-image: url('img/apple4.jpeg');"></div>
+  </div>
+  <div class="rectangle">
+    <input type="radio" class="rectangle" name="rect" id="rect5">
+    <label for="rect5" class="rectangle-label"></label>
+    <div class="popup-trigger" onclick="openPopup()">+</div>
+    <div class="rectangle-image" style="background-image: url('img/apple5.jpeg');"></div>
+  </div>
+  <div class="rectangle">
+    <input type="radio" class="rectangle" name="rect" id="rect6">
+    <label for="rect6" class="rectangle-label"></label>
+    <div class="popup-trigger" onclick="openPopup()">+</div>
+    <div class="rectangle-image" style="background-image: url('img/apple6.jpeg');"></div>
+  </div>
+  <div class="rectangle">
+    <input type="radio" class="rectangle" name="rect" id="rect7">
+    <label for="rect7" class="rectangle-label"></label>
+    <div class="popup-trigger" onclick="openPopup()">+</div>
+    <div class="rectangle-image" style="background-image: url('img/apple7.jpeg');"></div>
+</div>
+ <span class="right=pad"></span>
+
+
+</div>
+
+<div class="nav-buttons-container">
+  <button class="nav-button" onclick="moveRectangles('left')"> &lt; </button>
+  <button class="nav-button" onclick="moveRectangles('right')"> &gt; </button>
+</div>
+
+</div>
+
+
+
+
+<div class="backdrop" id="backdrop"></div>
+
+
+
+
+<div class="popup-container" id="popup-container">
+<span class="popup-close" onclick="closePopup()">X</span>
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>Getting Started</h2>
+    <h1>Easy to use. Easy to love.</h1>
+    <h3>Familiar as iPhone. You’ll feel right at home on Mac, with many of the same apps as iPhone — like Messages, Photos, Notes, and FaceTime.</h3>
+    <img src="img/apple-popup.jpeg" alt="Popup Image">
+    <h3>Fully loaded. Get started with apps you’ll use every day, like Mail, Calendar, and Safari for surfing the web. And if you want to create documents, spreadsheets, or presentations, there are powerful built-in productivity apps like Pages, Numbers, and Keynote.</h3>
+    <img src="img/apple-popup2.jpeg" alt="Popup Image">
+    <h3>Simple setup. Migration Assistant makes it easy to transfer your data — including documents, photos, settings, and user accounts — from your previous Mac or PC.</h3>
+    <img src="img/apple-popup3.jpeg" alt="Popup Image">
+  </div>
+</div>
+</div>
+
+<div class="box">
+        <h4>Triggers</h4>
+        <p>Scroll: When users scroll horizontally back and forth through the page, cursor must be on the carousel's region</p>
+        <p>Hover-on section</p>
+        <p>Hover-off section</p>
+        <p>Click section</p>
+        <p>Hover-on + button</p>
+        <p>Hover-off + button</p>
+        <p>Click + button</p>
+        <p>Hover-on x button</p>
+        <p>Hover-off x button</p>
+        <p>Click x button</p>
+        <p>Hover-on > < button</p>
+        <p>Hover-off > < button</p>
+        <p>Click > < button</p>
+  <h4>Rules</h4>
+      <p>Scroll: The sections will move to the left or right on-scroll based on the scrolling direction. </p>
+      <p>Hover-on section: The section will gradually increase the size, cursor changes to pointer</p>
+      <p>Hover-off section:The section will gradually decrease the size back to default size, cursor changes to arrow</p>
+      <p>Click section: New window pop-up</p>
+      <p>Hover-on + button: The + icon gradually change from light grey to white</p>
+      <p>Hover-off + button: The + icon gradually change from white back to light grey</p>
+      <p>Click + button: New window pop-up</p>
+      <p>Hover-on x button: The x icon gradually change from light grey to white</p>
+      <p>Hover-off x button: The x icon gradually change from white back to light grey</p>
+      <p>Click x button: Deatail window close</p>
+      <p>Hover-on > < button: The background of the button changes to lighter grey</p>
+      <p>Hover-off > < button: The background of the button changes back to default grey</p>
+      <p>Click > < button: The section will move each by each depend on the direction of the button</p>
+      <p>Click outside the pop-up window: The window is closed</p>
+  <h4>Feedbacks</h4>
+      <p>Scroll: The sections will move to the left or right on-scroll based on the scrolling direction. </p>
+      <p>Hover-on section: The section will gradually increase the size, cursor changes to pointer</p>
+      <p>Hover-off section:The section will gradually decrease the size back to default size, cursor changes to arrow</p>
+      <p>Click section: New window pop-up</p>
+      <p>Hover-on + button: The + icon gradually change from light grey to white</p>
+      <p>Hover-off + button: The + icon gradually change from white back to light grey</p>
+      <p>Click + button: New window pop-up</p>
+      <p>Hover-on x button: The x icon gradually change from light grey to white</p>
+      <p>Hover-off x button: The x icon gradually change from white back to light grey</p>
+      <p>Click x button: Deatail window close</p>
+      <p>Hover-on > < button: The background of the button changes to lighter grey</p>
+      <p>Hover-off > < button: The background of the button changes back to default grey</p>
+      <p>Click > < button: The section will move each by each depend on the direction of the button</p>
+      <p>Click outside the pop-up window: The window is closed</p>
+      <h4>Loops & Modes</h4>
+        <p>There’s no loops</p>
+        <p>Click-on section mode: New window have the detail content of the section pop-up</p>
+        <p>Click + button: New window have the detailed content of the section pop-up</p>
+</div>
+<script>
+const rectanglesContainer = document.querySelector('.carousel-container');
+const rectangles = document.querySelectorAll('.rectangle');
+const popupContainer = document.getElementById('popup-container');
+const backdrop = document.getElementById('backdrop'); // Assuming you have a backdrop element
+
+
+
+
+let currentIndex = 0;
+
+
+
+
+rectangles.forEach((rectangle, index) => {
+  rectangle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    showPopup(index + 1);
+  });
+});
+
+
+
+
+function showPopup(index) {
+   popupContainer.style.display = 'block';
+   backdrop.style.display = 'block';
+  var opacity = 0;
+  var intervalID = setInterval(function() {
+
+
+      if (opacity < 1) {
+          opacity = opacity + 0.5
+          popupContainer.style.opacity = opacity;
+          backdrop.style.opacity = opacity;
+      } else {
+          clearInterval(intervalID);
+      } f
+  }, 4);
+   document.body.classList.add('no-scroll');
+   document.getElementById(`rect${index}`).checked = true;
+   currentIndex = index - 1;
+
+
+
+
+   document.addEventListener('click', closePopupOutside);
+ }
+
+
+
+
+
+function openPopup() {
+  popupContainer.style.display = 'block';
+  backdrop.style.display = 'block'; // Show the backdrop
+}
+
+
+
+
+async function closePopup() {
+  var opacity = 1; // Initial opacity value
+  var timer = setInterval(function () {
+      if (opacity < -5){
+          clearInterval(timer);
+          popupContainer.style.display = 'none';
+          backdrop.style.display = 'none';
+      }
+      popupContainer.style.opacity = opacity;
+      backdrop.style.opacity = opacity;
+      opacity -= 0.1;
+  }, 5);
+}
+
+
+
+
+
+function moveRectangles(direction) {
+  const rectWidth = rectangles[0].offsetWidth + 5; // Width of one rectangle plus margin-right
+
+
+
+
+  if (direction === 'left') {
+    rectanglesContainer.scrollTo({
+      left: rectanglesContainer.scrollLeft - rectWidth,
+      behavior: 'smooth'
+    });
+  } else if (direction === 'right') {
+    rectanglesContainer.scrollTo({
+      left: rectanglesContainer.scrollLeft + rectWidth,
+      behavior: 'smooth'
+    });
+  }
+
+
+
+
+  // Determine the current index based on the new scroll position
+  currentIndex = Math.round(rectanglesContainer.scrollLeft / rectWidth);
+}
+
+
+
+
+document.addEventListener('click', function (event) {
+  if (!popup.contains(event.target) && !event.target.classList.contains('rectangle')) {
+    closePopup();
+  }
+});
+
+function openPopupSmoothly() {
+  const popupContainer = document.getElementById('popup-container');
+  const backdrop = document.getElementById('backdrop');
+
+  popupContainer.style.display = 'block';
+  setTimeout(() => {
+    popupContainer.style.opacity = '1';
+    popupContainer.style.transform = 'translateY(0)';
+  }, 10);
+
+  backdrop.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function closePopupSmoothly() {
+  const rectangles = document.querySelectorAll('.rectangle');
+  const popupContainer = document.getElementById('popup-container');
+  const backdrop = document.getElementById('backdrop');
+
+  rectangles.forEach(rectangle => {
+    rectangle.checked = false;
+  });
+
+  popupContainer.style.opacity = '0';
+  popupContainer.style.transform = 'translateY(-50%)';
+  setTimeout(() => {
+    popupContainer.style.display = 'none';
+  }, 300);
+
+  backdrop.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+
+
+</script>
+
+</body>
+</html>
+
+
